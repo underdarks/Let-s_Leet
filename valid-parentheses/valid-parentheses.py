@@ -1,8 +1,8 @@
 class Solution:
-    def isValid(self, s: str) -> bool:
-        while '{}' in s or '()' in s or '[]' in s:
-            s=s.replace('{}','')
-            s=s.replace('[]','')
-            s=s.replace('()','')
-        
-        return s==''
+    def isValid(self, string: str) -> bool:
+        while '{}' in string or '()' in string or '[]' in string:
+              string=string.replace('{}','')
+              string=string.replace('[]','')
+              string=string.replace('()','')
+
+        return string==''
