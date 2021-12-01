@@ -30,3 +30,7 @@ class Que:
     def all_search(self):
         return self.que[self.head:]
 
+        
+
+    
+
