@@ -2,16 +2,9 @@ import re
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        t=re.sub('[-=+,#/\?:^.@*\"※~ㆍ!』‘|\(\)\[\]`\'…》\”\“\’·]','',s)
-        end=len(t)
-        for i in range(len(t)):
-            end-=1
-            if end < i: break
-            if s[i] != s[end]:
-                return False
-
-        
-        return True
+        s=s.lower()
+        s=re.sub('[^a-z0-9]','',s)
+        return s==s[::-1]
 
         
 
@@ -20,5 +13,9 @@ class Solution:
 
 s=Solution()
 # str="a."
-str="A man, a plan, a canal: Panama"
-print(s.isPalindrome(str))
+str="I, man, am regal; a German am I."
+# print(s.isPalindrome(str))
+
+
+print(str[::-1])
+
