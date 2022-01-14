@@ -14,15 +14,9 @@ class Solution {
             map.put(key,values);
         }
 
-        //2.
-        for (String key : map.keySet()) {
-            List<String> values = map.get(key);
-            list.add(values);
-//            List<String> value = map.get(key);
-//            List<String> t=new ArrayList<>(value.size());
-//            Collections.copy(t,value);
-//            list.add(t);
-        }
+        //2.맵에서 꺼내서 담기
+         for (String key : map.keySet()) 
+            list.add(map.get(key));
 
         return list;
     }
