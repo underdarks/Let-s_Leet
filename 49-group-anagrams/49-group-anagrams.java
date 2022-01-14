@@ -3,9 +3,6 @@ class Solution {
              List<List<String>> list=new ArrayList<>();
         HashMap<String,List<String>> map=new HashMap<>();
 
-        if(strs.length <1)
-            return list;
-
         //1.정렬 후 map에 담기
         for (int i = 0; i < strs.length; i++) {
             char[] chars = strs[i].toCharArray();
