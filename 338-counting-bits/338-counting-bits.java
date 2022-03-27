@@ -3,7 +3,7 @@ class Solution {
         int []answer=new int[n+1];
 
         for (int i = 0; i <= n; i++) 
-            answer[i]=answer[i >> 1] + (i&1);
+            answer[i]=answer[(i/2)] + (i%2);
         
         return answer;
     }
