@@ -14,8 +14,9 @@ class Solution {
                     cur.add(prev.get(j) + prev.get(j - 1));
             }
 
-            list.add(cur);
             prev=cur;
+            list.add(cur);
+            
         }
 
         return list;
